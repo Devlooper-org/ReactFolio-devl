@@ -12,7 +12,7 @@ const Navbar = () => {
                 <a href="#portfolios">Portfolios</a>
                 <a href="#work">Work</a>
                 <a href="#contact">Contact</a>
-            <button className="cta-button">Start a Project?</button>
+            <button className="nav-button">Start a Project?</button>
             </nav>
         </header>
     );

@@ -6,7 +6,6 @@
 }
 
 body{
-  /* background: #000; */
   background: #050A11;
 }
 
@@ -37,6 +36,25 @@ body{
   width: 100%;
   margin-top: 10%;
 }
+
+.analytics h1{
+  font-size: 3.5rem;
+}
+
+.Discussion{
+  font-size: 6rem;
+  font-weight: 800;
+  color: white;
+}
+
+.Discussion .works{
+  color:  #0066ff;
+}
+
+.Discussion .creative{
+  color:  blue;
+}
+
 
 @media screen and (max-width:768px) {
   .whyus img{

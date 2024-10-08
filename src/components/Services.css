@@ -1,0 +1,61 @@
+.service-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  color: white;
+  text-align: center;
+}
+
+.service-text{
+  text-align: left;
+}
+
+.service-text h2 {
+  font-size: 1.5rem;
+  color: #00e6ac;
+}
+
+.service-items {
+  display: flex;
+  gap: 2rem;
+  margin-top: 20px;
+  color: #999;
+}
+
+@media (max-width: 768px) {
+  .service-items {
+    flex-wrap: wrap;
+  }
+
+  .service-text h2 {
+    font-size: 1.3rem;
+  }
+
+  .service-text p {
+    font-size: 1rem;
+  }
+
+  .service-item {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-items {
+    grid-template-columns: 1fr;
+  }
+
+  .service-text h2 {
+    font-size: 1.1rem;
+  }
+
+  .service-text p {
+    font-size: 0.9rem;
+  }
+
+  .service-item {
+    font-size: 0.8rem;
+  }
+}
