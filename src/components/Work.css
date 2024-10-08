@@ -1,0 +1,21 @@
+.work-container{
+  padding: 4rem;
+}
+
+.work-text{
+  text-align: left;
+}
+.work-text h2{
+  font-size: 1.5rem;
+  color: #00e6ac;
+}
+
+.Work-Img img{
+  width: 100%;
+}
+
+.Work-Img p{
+  text-align: left;
+  color: #999;
+  margin-top: 2rem;
+}

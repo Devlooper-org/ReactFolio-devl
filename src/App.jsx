@@ -1,35 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import './App.css';
+import Navbar from "./components/Navbar";
+import RepeatPhrase from './components/RepeatPhrase';
+import Analytics from './components/Analytics';
+import Services from './components/Services';
+import Work from './components/Work'
+import Brand from './components/Brand';
+import Footer from './components/Footer';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+const Hero = () => {
+    return (
+      <div className='App'>
+        <header className="hero-section">
+          <Navbar/>
+            <div className="hero-content">
+              <h1>Real Agency<br/>With Its Super<br/><span>Digital</span></h1>
+              <p>Let's start discussing your project</p>
+            </div>
+            <div className='whyus'>
+              {/* <h1>WhyUs?</h1> */}
+              <img src="src/Untitled design.png" alt="" />
+            </div>
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+            <RepeatPhrase/>
+        </header>
+            <Analytics/>
+            <Services/>
+            <Work/>
+            <Brand/>
 
-export default App
+            <div className='Discussion'>
+              <p>Let's <span className='works'>Works</span> <br />Together<br />Let's <span className='creative'>Creative</span></p>
+            </div>
+
+            <Footer/>
+      </div>      
+    );
+};
+
+export default Hero;
