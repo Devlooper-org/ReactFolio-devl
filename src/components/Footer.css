@@ -1,0 +1,71 @@
+.footer {
+
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.left-section, .center-section, .right-section {
+  padding: 20px;
+  min-width: 250px;
+}
+
+.left-section {
+  text-align: left;
+}
+
+.left-section h2 {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.highlight {
+  text-decoration: underline;
+}
+
+.cta-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.center-section p {
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.right-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.right-section li {
+  margin-bottom: 10px;
+}
+
+.right-section a {
+  color: white;
+  text-decoration: none;
+}
+
+.right-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+}
