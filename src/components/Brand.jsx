@@ -1,11 +1,11 @@
 import React from "react";
-import './Brand.css';
+import '../styles/Brand.css';
 
 const Brand = () => {
   return (
     <div className="Brand-container">
       <div className="Brand-text text-white">
-        <h1>Leading Brands & <br/> Agencies Trust Us</h1>
+        <h1 className="text-shadow">Leading Brands & <br/> Agencies Trust Us</h1>
       </div>
       <div className="BrandName">
         <h4>Kanba</h4>

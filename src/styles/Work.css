@@ -1,7 +1,15 @@
 .work-container{
   padding: 4rem;
 }
-
+@media screen and (max-width: 768px) {
+  .work-container{
+    padding: 2rem;
+  }
+  
+}
+.view-more{
+  max-width: 200px !important;
+}
 .work-text{
   text-align: left;
 }

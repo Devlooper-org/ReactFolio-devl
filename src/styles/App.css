@@ -15,28 +15,31 @@ body{
 
 .hero-section {
   color: white;
-  padding: 0 20px;
+  background: url('../assets/waves.png') no-repeat center;
+  background-size: cover;
 }
 .hero-content{
   top: 50%;
   transform: translateY(20%);
-  transform-origin: top;
 }
 .hero-content h1 {
-  font-size: 6rem;
+  position: relative;
+  top: 20%;
+  font-weight: 800;
 }
-
-/* .whyus h1{
+.lower{
+  position: relative;
+  z-index: 0;
+}
+.upper{
+  position: relative;
+  z-index: 2;
+}
+.main-lines{
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   color: white;
-  margin-top: 20%;
-  font-size: 10rem;
-} */
-
-.whyus img{
-  width: 100%;
-  margin-top: 10%;
+  font-size: clamp(4rem, 7vw, 6rem) !important; /* Responsive font size */
 }
-
 .analytics h1{
   font-size: 3.5rem;
 }
@@ -60,4 +63,12 @@ body{
   .whyus img{
     margin-top: 20%;
   }
+  .hero-content h1 {
+    font-size: 5rem;
+    padding: 0 20px;
+    transform: translateY(-10%);
+  }
+}
+.flowerimg{
+  filter: drop-shadow(100px 100px 100px rgba(0, 0, 0, 0.5));
 }

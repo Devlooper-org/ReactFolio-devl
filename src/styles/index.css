@@ -3,5 +3,45 @@ body{
   font-family: "Cormorant", serif;
 }
 body{
-  background-color: #050a11;
+  background: linear-gradient(120deg, #1a2a6c, #b21f1f, #fdbb2d);
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0e0f16;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: #f1f1f1;
+
+}
+body{
+  width: 100%;
+  overflow-x: hidden;
+}
+html{
+  overflow-x: hidden;
+}
+.bg-transblack-bod{
+  background: rgba(0, 0, 0, 0.232);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgb(0, 0, 0);
+  border-bottom: 1px solid rgb(0, 0, 0);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.text-shadow{
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }

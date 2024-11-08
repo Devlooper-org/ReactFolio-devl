@@ -1,0 +1,31 @@
+.whyus {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  /* Image styling */
+  .whyus img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Make sure the image covers the whole area */
+  }
+  
+  /* Text styling */
+  .whyus h1 {
+    position: absolute;
+    color: white !important;
+    font-size: clamp(3rem, 10vw, 10rem); /* Responsive font size */
+    z-index: 1; /* Ensure the text is above the image */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add a slight shadow for better visibility */
+    font-weight: bold;
+  }
+  
+  /* Optional: Adjust image and text overlap */
+  .whyus img {
+    transform: translateY(60%); 
+    z-index: 2;/* Moves the image up/down as needed */
+  }

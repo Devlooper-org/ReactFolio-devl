@@ -1,0 +1,9 @@
+.blogpost{
+    background: rgba(0, 0, 0, 0.5) !important;
+    backdrop-filter: blur(10px) !important;
+    color: white !important;
+    border-radius: 10px !important;
+}
+.bloghead h2{
+    font-size: 1.5rem;
+}
