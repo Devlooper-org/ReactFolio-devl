@@ -11,7 +11,21 @@ const Footer = () => {
         <div className="row">
           {/* Left Section */}
           <div className="col-lg-4 mb-4">
-            <h2>Would you like to work with us? Let's work together</h2>
+            <h4>Would you like to work with us? Let's work together</h4>
+            <span className='d-flex w-100 justify-content-center'>
+    <a href="https://facebook.com" className="text-decoration-none text-white me-2">
+        <FontAwesomeIcon icon={faFacebook} />
+    </a>
+    <a href="https://instagram.com" className="text-decoration-none text-white me-2">
+        <FontAwesomeIcon icon={faInstagram} />
+    </a>
+    <a href="https://twitter.com" className="text-decoration-none text-white me-2">
+        <FontAwesomeIcon icon={faTwitter} />
+    </a>
+    <a href="https://linkedin.com" className="text-decoration-none text-white me-2">
+        <FontAwesomeIcon icon={faLinkedin} />
+    </a>
+</span>
             <button className="btn footer-btn mt-3">Start a Project?</button>
           </div>
 
@@ -42,12 +56,6 @@ const Footer = () => {
         {/* Footer Bottom */}
         <div className="row">
           <div className="col text-center">
-            <span className='d-flex w-100 justify-content-center'>
-              <FontAwesomeIcon icon={faFacebook} className='me-2' />
-              <FontAwesomeIcon icon={faInstagram} className='me-2' />
-              <FontAwesomeIcon icon={faTwitter} className='me-2' />
-              <FontAwesomeIcon icon={faLinkedin} className='me-2' />  
-            </span>
             <p className="mb-0">© 2022 Walkagency - All Right Reserved</p>
           </div>
         </div>

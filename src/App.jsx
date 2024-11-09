@@ -1,8 +1,7 @@
 import React from 'react';
 import './styles/App.css';
 import Navbar from "./components/Navbar";
-import RepeatPhrase from './components/RepeatPhrase';
-import Logos from './components/logos';
+import Blog from './components/Blog';
 import Whyus from './components/Whyus';
 import Analytics from './components/Analytics';
 import Services from './components/Services';
@@ -13,8 +12,6 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import ContactSection from './components/ContactSection';
 import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import img from './assets/3d.png';
-import { useState, useEffect } from 'react';
 
 const Hero = () => {
     return (
@@ -35,7 +32,7 @@ const Hero = () => {
             <Analytics/>
             <Services/>
             <Work/>
-            <RepeatPhrase/>
+            <Blog/>
             <Brand/>
             <ContactSection/>
             <div className='Discussion'>

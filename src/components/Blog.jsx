@@ -53,6 +53,7 @@ const RepeatPhrase = () => {
                 <a href={post.link} target="_blank" rel="noopener noreferrer" className="btn btn-outline-light">
                   Read More
                 </a>
+                <div className="mt-3 d-flex align-items-center"><span className="bg-success rounded-circle me-2" style={{width:'40px',height:'40px'}}></span>Vishal Yadav - 23th October 2024</div>
               </div>
             </div>
           </div>
