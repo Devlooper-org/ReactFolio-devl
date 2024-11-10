@@ -44,7 +44,6 @@
   font-size: 30px;
   font-weight: bold;
 }
-
 .nav-links a {
   font-size: 20px;
   font-weight: 500;
@@ -59,6 +58,7 @@
   border: none;
   padding: 10px 20px;
   border-radius: 25px;
+  margin: 0px !important;
   cursor: pointer;
   font-size: smaller !important;
   font-weight: 300;

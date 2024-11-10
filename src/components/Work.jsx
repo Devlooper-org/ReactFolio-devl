@@ -3,6 +3,8 @@ import '../styles/Work.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons/faAngleDoubleDown";
 import AOS from 'aos';
+import work1 from '../assets/WorkImg1.png';
+import work2 from '../assets/WorkImg2.png';
 import 'aos/dist/aos.css';
 
 const Work = () => {
@@ -17,12 +19,12 @@ const Work = () => {
 
   // Project data array with links added
   const projects = [
-    { id: 1, title: "UIUX Design / MOSEOM 2022", imgSrc: "src/WorkImg1.png", link: "https://example.com/moseom-2022" },
-    { id: 2, title: "UIUX Design / MOSEOM 2022", imgSrc: "src/WorkImg1.png", link: "https://example.com/moseom-2022" },
-    { id: 3, title: "UIUX Design / MUSIC PLAYER 2019", imgSrc: "src/WorkImg2.png", link: "https://example.com/music-player-2019" },
-    { id: 4, title: "Web Design / E-COMMERCE PLATFORM 2021", imgSrc: "src/WorkImg1.png", link: "https://example.com/ecommerce-2021" },
-    { id: 5, title: "Mobile App / FITNESS APP 2023", imgSrc: "src/WorkImg2.png", link: "https://example.com/fitness-app-2023" },
-    { id: 6, title: "Branding / TECH CONFERENCE 2020", imgSrc: "src/WorkImg1.png", link: "https://example.com/tech-conference-2020" },
+    { id: 1, title: "UIUX Design / MOSEOM 2022", imgSrc: work1, link: "https://example.com/moseom-2022" },
+    { id: 2, title: "UIUX Design / MOSEOM 2022", imgSrc: work2, link: "https://example.com/moseom-2022" },
+    { id: 3, title: "UIUX Design / MUSIC PLAYER 2019", imgSrc: work1, link: "https://example.com/music-player-2019" },
+    { id: 4, title: "Web Design / E-COMMERCE PLATFORM 2021", imgSrc: work2, link: "https://example.com/ecommerce-2021" },
+    { id: 5, title: "Mobile App / FITNESS APP 2023", imgSrc: work1, link: "https://example.com/fitness-app-2023" },
+    { id: 6, title: "Branding / TECH CONFERENCE 2020", imgSrc: work2, link: "https://example.com/tech-conference-2020" },
     // Add more projects as needed
   ];
 

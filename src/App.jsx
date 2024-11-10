@@ -20,8 +20,8 @@ const Hero = () => {
           <Navbar/>
           <div className='min-vh-100'>
             <div className="hero-content">
-              <h1 className='main-lines'><span className='lower'>We Make<br/>What Makes </span>
-              <span className='upper'>You<br />You</span>
+              <h1 className='main-lines'><span className='lower'>Building the<br/>Future </span>
+              <span className='upper'>One Line at<br /> a Time.</span>
               </h1>
               <a className='btn btn-outline-light mt-0 mt-md-3 px-3 py-2' href="#contact">let's Start <FontAwesomeIcon icon={faArrowAltCircleRight} className='ms-1'/></a>
             </div>

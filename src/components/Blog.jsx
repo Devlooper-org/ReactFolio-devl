@@ -3,6 +3,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import "../styles/blog.css";
+import work1 from "../assets/WorkImg1.png";
+import work2 from "../assets/WorkImg2.png";
 
 const RepeatPhrase = () => {
     useEffect(() => {
@@ -17,21 +19,21 @@ const RepeatPhrase = () => {
         id: 1,
         title: "Understanding UI/UX Design Principles",
         description: "A guide to the core principles of user interface and user experience design...",
-        imgSrc: "src/WorkImg1.png",
+        imgSrc: work1,
         link: "https://example.com/uiux-design-principles",
       },
       {
         id: 2,
         title: "Web Development Trends in 2024",
         description: "Discover the latest trends in web development for 2024, including frameworks, tools, and techniques...",
-        imgSrc: "src/WorkImg1.png",
+        imgSrc: work1,
         link: "https://example.com/web-development-trends",
       },
       {
         id: 3,
         title: "Effective Branding Strategies",
         description: "Learn how to create a strong brand identity and connect with your target audience...",
-        imgSrc: "src/WorkImg1.png",
+        imgSrc: work1,
         link: "https://example.com/branding-strategies",
       },
     ];
