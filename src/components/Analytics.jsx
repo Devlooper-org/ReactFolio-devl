@@ -15,32 +15,32 @@ const Analytics = () => {
   }, []);
   return (
     <div className="container" id="work">
-      <h1 className="text-white text-shadow">Recognize your successes and keep working to accomplish more.</h1>
+      <h1 className="text-white text-shadow">We always thrive to deliver better.</h1>
       <div className="grid-container text-white">
         <div data-aos="fade-up" className="grid-item box special-box">
-          <h2>$812+</h2>
-          <p>Money Raised</p>
+          <h2>30+</h2>
+          <p>Technologies</p>
           <span>
-            Total Amount of money raised as a result of working with waki studio
+            The technologies that we have mastered to deliver the best.
           </span>
         </div>
 
         <div data-aos="fade-up" className="grid-item box">
-          <h2>400+</h2>
+          <h2>25+</h2>
           <p>Our Client</p>
-          <span>Total of clients around the world who have collaboarted with us</span>
+          <span>Total of clients around the world who have collaboarted with us.</span>
         </div>
 
         <div data-aos="fade-up" className="grid-item box">
-          <h2>12+</h2>
-          <p>Unicorn Award</p>
-          <span>We have receiver various awards with projects and efforts</span>
+          <h2>1,25,000+</h2>
+          <p>Lines of Code</p>
+          <span>The lines of code we have written to shape the ideas.</span>
         </div>
 
         <div data-aos="fade-up" className="grid-item box special-box">
-          <h2>425+</h2>
-          <p>Project Complete</p>
-          <span>Various kinds of big projects that we have completed on time</span>
+          <h2>35+</h2>
+          <p>Projects Completed</p>
+          <span>Various kinds of big projects that we have completed on time.</span>
         </div>
       </div>
     </div>

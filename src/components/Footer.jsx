@@ -11,12 +11,12 @@ const Footer = () => {
         <div className="row">
           {/* Left Section */}
           <div className="col-lg-4 mb-4">
-            <h4>Would you like to work with us? Let's work together</h4>
+            <h4>Would you like discuss something? Let's connect.</h4>
             <span className='d-flex w-100 justify-content-center'>
     <a href="https://facebook.com" className="text-decoration-none text-white me-2">
         <FontAwesomeIcon icon={faFacebook} />
     </a>
-    <a href="https://instagram.com" className="text-decoration-none text-white me-2">
+    <a href="https://instagram.com/devlooper_india" className="text-decoration-none text-white me-2">
         <FontAwesomeIcon icon={faInstagram} />
     </a>
     <a href="https://twitter.com" className="text-decoration-none text-white me-2">
@@ -32,11 +32,10 @@ const Footer = () => {
           {/* Center Section */}
           <div className="col-lg-4 mb-4">
             <p>
-              Babarsari Sleman, No 23 Ruko<br />
-              Biru Kab. Sleman, Kota Yogyakarta<br />
-              +62 824 - 2637 - 8823<br />
-              +62 813 - 3445 - 9349<br />
-              <a href="mailto:Walkagency@studio.io" className="text-white">Walkagency@studio.io</a>
+              Mumbai<br />
+              Maharashtra, India<br />
+              +91 90828-98864<br />
+              <a href="mailto:Walkagency@studio.io" className="text-white">admin@devlooper.me</a>
             </p>
           </div>
 
@@ -44,7 +43,7 @@ const Footer = () => {
           <div className="col-lg-4 mb-4">
             <ul className="list-unstyled">
               <li><a href="#" className="text-white text-decoration-none">Home</a></li>
-              <li><a href="#" className="text-white text-decoration-none">Service</a></li>
+              <li><a href="#service" className="text-white text-decoration-none">Service</a></li>
               <li><a href="#" className="text-white text-decoration-none">Portfolio</a></li>
               <li><a href="#" className="text-white text-decoration-none">Work</a></li>
               <li><a href="#" className="text-white text-decoration-none">Contact</a></li>
@@ -56,7 +55,7 @@ const Footer = () => {
         {/* Footer Bottom */}
         <div className="row">
           <div className="col text-center">
-            <p className="mb-0">© 2022 Walkagency - All Right Reserved</p>
+            <p className="mb-0">&copy; 2023 Devlooper - All Right Reserved</p>
           </div>
         </div>
       </div>

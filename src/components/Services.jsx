@@ -20,13 +20,14 @@ const Services = () => {
         <h1 className="text-shadow" data-aos="fade-left">It's not about what we make, it's about how satisfied you are with our service</h1>
       </div>
       <div className="service-items">
-        <h4>•Design Graphic</h4>
-        <h4>Webflow</h4>
-        <h4>UIUX Design</h4>
-        <h4>Illustration</h4>
-        <h4>Motion</h4>
-        <h4>3D Design</h4>
-        <h4>Brand Identity</h4>
+        <h4>Web Development</h4>
+        <h4>API Development</h4>
+        <h4>UI/UX Designing</h4>
+        <h4>Android/IOS Development</h4>
+        <h4>Software Development</h4>
+        <h4>CRM/ERP Development</h4>
+        <h4>Cybersecurity</h4>
+        <h4>SEO/Marketing</h4>
       </div>
     </div>
   );
