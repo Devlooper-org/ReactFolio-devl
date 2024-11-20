@@ -9,6 +9,14 @@ const RepeatPhrase = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease',
+      once: true,
+    });
+  }, []);
+
   const extractImage = (content) => {
     const parser = new DOMParser();
     const doc = parser.parseFromString(content, "text/html");
@@ -23,15 +31,21 @@ const RepeatPhrase = () => {
 
   useEffect(() => {
     const fetchBlogs = async () => {
-      const API_KEY = "AIzaSyDeZHXa7b91LcqtNqvSk1u_xRZWsWOmZvM";
+      const TOKEN = "https://188443702128-lb6aci22chf0m6ssq6sp4fjbriv0hljt.apps.googleusercontent.com/";
       const BLOG_ID = "3929289299014833920";
-      const API_URL = `https://www.googleapis.com/blogger/v3/blogs/${BLOG_ID}/posts?key=${API_KEY}&maxResults=3`;
-
+      const API_URL = `https://www.googleapis.com/blogger/v3/blogs/${BLOG_ID}/posts?maxResults=3`;
+    
       try {
-        const response = await fetch(API_URL);
+        const response = await fetch(API_URL, {
+          headers: {
+            Authorization: `Bearer ${TOKEN}`,
+          },
+        });
+    
         if (!response.ok) {
           throw new Error("Failed to fetch blog posts.");
         }
+    
         const data = await response.json();
         const blogs = data.items.map((item) => ({
           id: item.id,
@@ -47,7 +61,7 @@ const RepeatPhrase = () => {
       } finally {
         setLoading(false);
       }
-    };
+    };    
 
     fetchBlogs();
   }, []);
