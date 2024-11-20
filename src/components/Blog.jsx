@@ -31,7 +31,7 @@ const RepeatPhrase = () => {
 
   useEffect(() => {
     const fetchBlogs = async () => {
-      const TOKEN = "https://188443702128-lb6aci22chf0m6ssq6sp4fjbriv0hljt.apps.googleusercontent.com/";
+      const TOKEN = "TOKEN";
       const BLOG_ID = "3929289299014833920";
       const API_URL = `https://www.googleapis.com/blogger/v3/blogs/${BLOG_ID}/posts?maxResults=3`;
     
