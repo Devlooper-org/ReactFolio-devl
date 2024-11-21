@@ -7,7 +7,7 @@ const Brand = () => {
       <div className="Brand-text text-white">
         <h1 className="text-shadow">Brand and agencies we have worked with</h1>
       </div>
-      <div className="BrandName">
+      <div className="BrandName text-grey">
         <h4>Upiarch</h4>
         <h4>Dronebots</h4>
         <h4>Playdisk</h4>

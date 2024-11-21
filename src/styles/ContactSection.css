@@ -77,8 +77,8 @@
   .contact-form button {
     padding: 15px;
     font-size: 1rem;
-    color: #fff;
-    background:linear-gradient(130deg,#b11f1f, #ff8c00); /* Matches the button in your theme */
+    color: black;
+    background:white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -86,6 +86,7 @@
   }
   
   .contact-form button:hover {
-    background-color: #e67e22;
+    background: #e67e22 !important;
+    color: white;
   }
   

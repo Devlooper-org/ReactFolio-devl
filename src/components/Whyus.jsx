@@ -19,7 +19,7 @@ const Whyus = () => {
     };
   }, []);
     return(
-        <div className='whyus border-top border-bottom'>
+        <div className='whyus'>
               <h1>WhyUs?</h1>
               <img src={fileImage} width={100} style={{ transform: `translateY(${translateY}px)`,display: 'hidden' }} className='flowerimg' alt="" />
         </div>

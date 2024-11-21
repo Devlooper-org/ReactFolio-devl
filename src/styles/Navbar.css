@@ -53,8 +53,8 @@
 }
 
 .nav-button {
-  background: linear-gradient(150deg, #1a2a6c, #b21f1f, #fdbb2d);
-  color: white;
+  background: white;;
+  color: black !important;
   border: none;
   padding: 10px 20px;
   border-radius: 25px;
@@ -65,6 +65,7 @@
 }
 .nav-button:hover {
   background: linear-gradient(150deg, #ff8c00,#b11f1f);
+  color: white !important;
 }
 
 @media (max-width: 768px) {

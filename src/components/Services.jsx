@@ -19,7 +19,7 @@ const Services = () => {
         <h2 className="text-shadow" data-aos="fade-left">Our Service</h2>
         <h1 className="text-shadow" data-aos="fade-left">It's not about what we make, it's about how satisfied you are with our service</h1>
       </div>
-      <div className="service-items">
+      <div className="service-items text-grey">
         <h4>Web Development</h4>
         <h4>API Development</h4>
         <h4>UI/UX Designing</h4>

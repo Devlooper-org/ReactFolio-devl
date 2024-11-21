@@ -3,6 +3,12 @@ import '../styles/Work.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons/faAngleDoubleDown";
 import AOS from 'aos';
+import upiarch from '../assets/upiarch.jpg';
+import dronebots from '../assets/dronebots.jpg';
+import animegoat from '../assets/animegoat.jpg';
+import playdisk from '../assets/playdisk.jpg';
+import clawbox from '../assets/clawbox.jpg';
+import dimarlyx from '../assets/dimarlyx.jpg';
 import work1 from '../assets/WorkImg1.png';
 import work2 from '../assets/WorkImg2.png';
 import 'aos/dist/aos.css';
@@ -17,15 +23,13 @@ const Work = () => {
     });
   }, []);
 
-  // Project data array with links added
   const projects = [
-    { id: 1, title: "UIUX Design / MOSEOM 2022", imgSrc: work1, link: "https://example.com/moseom-2022" },
-    { id: 2, title: "UIUX Design / MOSEOM 2022", imgSrc: work2, link: "https://example.com/moseom-2022" },
-    { id: 3, title: "UIUX Design / MUSIC PLAYER 2019", imgSrc: work1, link: "https://example.com/music-player-2019" },
-    { id: 4, title: "Web Design / E-COMMERCE PLATFORM 2021", imgSrc: work2, link: "https://example.com/ecommerce-2021" },
-    { id: 5, title: "Mobile App / FITNESS APP 2023", imgSrc: work1, link: "https://example.com/fitness-app-2023" },
-    { id: 6, title: "Branding / TECH CONFERENCE 2020", imgSrc: work2, link: "https://example.com/tech-conference-2020" },
-    // Add more projects as needed
+    { id: 1, title: "E-Com / Dronebots", imgSrc: dronebots, link: "https://dronebots.in" },
+    { id: 2, title: "Gateway / Upiarch", imgSrc: upiarch, link: "https://example.com/moseom-2022" },
+    { id: 3, title: "Streaming / Animegoat", imgSrc: animegoat, link: "https://example.com/music-player-2019" },
+    { id: 4, title: "Webapp / Clawbox", imgSrc: clawbox, link: "https://example.com/ecommerce-2021" },
+    { id: 5, title: "Webapp / Playdisk", imgSrc: playdisk, link: "https://example.com/fitness-app-2023" },
+    { id: 6, title: "Landing / Dimarlyx", imgSrc: dimarlyx, link: "https://example.com/tech-conference-2020" },
   ];
 
   // State to control the number of projects to display
@@ -47,10 +51,10 @@ const Work = () => {
 
       <div className="Work-Img row">
         {projects.slice(0, visibleProjects).map((project) => (
-          <div className="col-md-4" key={project.id} data-aos="fade-up">
-            <p>{project.title}</p>
+          <div className="col-md-4 rounded" key={project.id} data-aos="fade-up">
+            <p className="text-white">{project.title}</p>
             <a href={project.link} target="_blank" rel="noopener noreferrer">
-              <img src={project.imgSrc} alt={project.title} />
+              <img src={project.imgSrc} className="rounded" alt={project.title} />
             </a>
           </div>
         ))}

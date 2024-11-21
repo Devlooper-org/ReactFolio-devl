@@ -14,6 +14,7 @@ const RepeatPhrase = () => {
       duration: 1000,
       easing: 'ease',
       once: true,
+      threshold: 0.9,
     });
   }, []);
 
@@ -31,37 +32,23 @@ const RepeatPhrase = () => {
 
   useEffect(() => {
     const fetchBlogs = async () => {
-      const TOKEN = "TOKEN";
-      const BLOG_ID = "3929289299014833920";
-      const API_URL = `https://www.googleapis.com/blogger/v3/blogs/${BLOG_ID}/posts?maxResults=3`;
-    
+      const API_URL = `https://api.devlooper.me/blog`;
+
       try {
-        const response = await fetch(API_URL, {
-          headers: {
-            Authorization: `Bearer ${TOKEN}`,
-          },
-        });
-    
+        const response = await fetch(API_URL);
         if (!response.ok) {
           throw new Error("Failed to fetch blog posts.");
         }
+        const blogs = await response.json();
     
-        const data = await response.json();
-        const blogs = data.items.map((item) => ({
-          id: item.id,
-          title: item.title,
-          link: item.url,
-          description: stripHTML(item.content).substring(0, 150) + "...",
-          imgSrc: extractImage(item.content),
-          published: new Date(item.published).toLocaleDateString(),
-        }));
+        console.log(blogs);
         setPosts(blogs);
       } catch (err) {
         setError(err.message);
       } finally {
         setLoading(false);
       }
-    };    
+    };
 
     fetchBlogs();
   }, []);
