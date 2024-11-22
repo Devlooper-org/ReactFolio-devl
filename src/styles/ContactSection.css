@@ -90,3 +90,6 @@
     color: white;
   }
   
+  .loadingImage{
+    height: 40px !important;
+  }

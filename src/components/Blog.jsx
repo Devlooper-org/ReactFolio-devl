@@ -40,8 +40,6 @@ const RepeatPhrase = () => {
           throw new Error("Failed to fetch blog posts.");
         }
         const blogs = await response.json();
-    
-        console.log(blogs);
         setPosts(blogs);
       } catch (err) {
         setError(err.message);
