@@ -21,7 +21,7 @@ const ContactSection = () => {
     event.preventDefault();
     const loading = document.getElementById("loadingImage");
     const messageBoxText = document.getElementById("messageBoxText");
-    const URL = "http://api.devlooper.me/sendMail";
+    const URL = "https://api.devlooper.me/sendMail";
     const subject = document.querySelector('input[name="subject"]').value;
     const sender_email = document.querySelector('input[name="sender_email"]').value;
     const body = document.querySelector('textarea[name="body"]').value;
